@@ -242,10 +242,41 @@ body, html {
     .container{
         width: 100%;
         background-image: url(images/filmstill.png);
+        
     }
 
     .container >.Text-Box{
         display: none;
+    }
+
+    .container >.mobileText-Box{
+        display: flex;
+        flex-direction: column;
+       
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .container >.mobileText-Box > .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .credit{
+        animation: none;
+    }
+    .twothou{
+        font-size: 5rem;
+    }
+
+    .aspace{
+        font-size: 2rem;
+    }
+    .OminousGlow{
+        width: 350px;
+        height: 350px;
+        top: 30%;
     }
     
 }
