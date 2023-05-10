@@ -208,11 +208,25 @@ body, html {
 }
 
 .Smallbutton{
-    position: relative;
+    position:absolute;
     background-color: rgba(0, 255, 255, 0);
+    top: 47.5vh;
+    right: 49.5vw;
     height: 40px;
     width: 40px;
     border-radius: 50%;
+}
+
+.black{
+    height:100vw;
+    width: 100%;
+    background-color: black;
+
+    animation: disappear 2s linear;
+}
+@keyframes disappear{
+    from{opacity:1;}
+    to{opacity: 0;}
 }
 
 @keyframes TextOpac{
@@ -235,12 +249,26 @@ body, html {
 
 
 @media screen and (max-width: 800px){
+
+    .HAL-Socket > img{
+        width: 400px;
+    }
+    .HAL-Red > img{
+        width: 400px;
+    }
+    .circle {
+        width: 380px;
+        height: 380px;
+        top: 30vh;
+    }
+
     .container-images{
         display: none;
     }
 
     .container{
         width: 100%;
+        height: 100%;
         background-image: url(images/filmstill.png);
         
     }
@@ -267,16 +295,30 @@ body, html {
         animation: none;
     }
     .twothou{
-        font-size: 5rem;
+        font-size: 11rem;
+        padding-bottom: 0px;
     }
 
     .aspace{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        padding-top: 1px;
+    }
+
+    .Smallbutton{
+        top: 46.5vh;
+        right: 48vw;
     }
     .OminousGlow{
         width: 350px;
         height: 350px;
         top: 30%;
     }
-    
+    @keyframes hoverAnimation {
+    0% {
+      bottom: 2%;
+    }
+    100% {
+      bottom: 4%;
+    }
+  }
 }
