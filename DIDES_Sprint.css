@@ -291,11 +291,12 @@ body, html {
     }
     .credit{
         animation: none;
+        top: 4%;
     }
     .twothou{
         font-size: 11rem;
         padding-bottom: 0px;
-        font-family: 'Sans Serif';
+        font-family:'Cavilant','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .aspace{
