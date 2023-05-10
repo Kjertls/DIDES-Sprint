@@ -113,20 +113,23 @@ body, html {
     padding-top: 2%;
     position: relative;
     display: flex;
-    width: 73%;
-    
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
     height: 20%;
     justify-content: space-between;
+    
 }
 
 .imageitem{
     transition: all 0.2s ease-in-out;
     box-shadow:0px 20px 30px rgba(36, 8, 8, 0.521);
+    
+    flex-basis: 1%;
 
 }
 .imageitem > img{  
    
-    width: 70%;
 }
 
 .imageitem:hover{
@@ -217,16 +220,11 @@ body, html {
     border-radius: 50%;
 }
 
-.black{
-    height:100vw;
-    width: 100%;
-    background-color: black;
 
-    animation: disappear 2s linear;
-}
 @keyframes disappear{
     from{opacity:1;}
-    to{opacity: 0;}
+    to{opacity: 0;
+    display: none;}
 }
 
 @keyframes TextOpac{
